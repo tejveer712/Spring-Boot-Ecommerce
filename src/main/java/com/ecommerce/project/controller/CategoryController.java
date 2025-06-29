@@ -33,7 +33,6 @@ public class CategoryController {
     public ResponseEntity<String> deleteCategory(@PathVariable Long categoryId){
         String status = categoryService.deleteCategory(categoryId);
         return new ResponseEntity<>(status, HttpStatus.OK);
-
     }
 
     @PutMapping("/public/categories/{categoryId}")
